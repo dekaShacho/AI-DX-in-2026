@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             <div className="relative bg-white p-2 rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative group">
                 <img 
-                  src="https://picsum.photos/800/600" 
+                  src="main.jpg" 
                   alt="前回のサミットの様子" 
                   className="w-full h-full object-cover" 
                 />
