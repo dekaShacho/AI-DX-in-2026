@@ -4,41 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI / DX サミット in 大阪 2026 | Larkで拓くワクワクする未来</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Noto Sans JP"', 'sans-serif'],
-                    },
-                    animation: {
-                        float: 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        .hero-bg-pattern {
-            background-color: #f8fafc;
-            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
         /* 画像がない時のスタイル */
         img {
             position: relative;
-            min-height: 50px; /* 文字が見えるように高さを確保 */
+            min-height: 50px;
             background-color: #f1f5f9;
-            color: transparent; /* デフォルトのaltテキストを隠す */
+            color: transparent;
         }
         img::after {
             content: "📷 " attr(alt) " を表示するには、画像ファイル " attr(src) " を配置してください";
@@ -60,17 +34,9 @@
             z-index: 10;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
-  }
-}
-</script>
 </head>
 <body class="bg-white text-slate-800 antialiased">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
