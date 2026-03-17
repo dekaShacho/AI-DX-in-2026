@@ -13,3 +13,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+import './index.css';  // ← 先頭に追加
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
